@@ -51,8 +51,11 @@ ii)Submit Button: Allows users to update their profile information, which then d
 
 # Technologies Used
 i)HTML: Structure and content of the web pages.
+
 ii)CSS: Styling and layout for a visually appealing interface.
+
 iii)JavaScript: Adding interactivity and dynamic functionality.
+
 iv)Bootstrap: Responsive design framework that enhances the user experience across various devices.
 
 # Conclusion
