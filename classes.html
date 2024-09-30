@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Classroom - Classes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Position the form a little higher */
+        .class-form-section {
+            padding-top: 80px;
+        }
+
+        .footer {
+            margin-top: auto;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Submitted class cards */
+        .class-card {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Virtual Classroom</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add Class Form Section -->
+    <section class="class-form-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Add a New Class</h2>
+            <form id="classForm">
+                <div class="mb-3">
+                    <label for="classTitle" class="form-label">Class Title</label>
+                    <input type="text" class="form-control" id="classTitle" placeholder="Enter class title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="classIntro" class="form-label">Introduction of Topic</label>
+                    <textarea class="form-control" id="classIntro" rows="3" placeholder="Enter an introduction to the topic" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="classSummary" class="form-label">Brief Summary of Topic</label>
+                    <textarea class="form-control" id="classSummary" rows="3" placeholder="Enter a brief summary" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="classUnits" class="form-label">Units Present in Topic</label>
+                    <input type="text" class="form-control" id="classUnits" placeholder="Enter units (comma-separated)" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Class</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Submitted Classes Section -->
+    <section class="submitted-classes-section py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">Submitted Classes</h3>
+            <div id="submittedClasses"></div> <!-- Classes will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Virtual Classroom | Designed with <span style="color: #e25555;">♥</span> by Shivam Kumar</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <!-- JavaScript -->
+    
+
+</body>
+
+</html>

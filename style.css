@@ -1,0 +1,61 @@
+
+.hero-section {
+    background: url('bg_vc.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.btn-cta {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
+
+.features-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+.feature-card {
+    background-color: #fff;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer span {
+    color: #e25555;
+}

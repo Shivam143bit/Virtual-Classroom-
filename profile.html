@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Virtual Classroom</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .profile-section {
+            padding: 50px 0;
+        }
+
+        .profile-card {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Virtual Classroom</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Student Profile</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card profile-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Student Information</h4>
+                            <form id="profileForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="courseId" class="form-label">Course ID</label>
+                                    <input type="text" class="form-control" id="courseId" placeholder="Enter your course ID" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="enrolledClasses" class="form-label">Enrolled Classes</label>
+                                    <input type="text" class="form-control" id="enrolledClasses" placeholder="Enter enrolled classes (comma-separated)" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="personalMobile" class="form-label">Personal Mobile Number</label>
+                                    <input type="tel" class="form-control" id="personalMobile" placeholder="Enter your mobile number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="parentsMobile" class="form-label">Parent's Mobile Number</label>
+                                    <input type="tel" class="form-control" id="parentsMobile" placeholder="Enter parent's mobile number" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <div id="profileOutput" class="mt-4" style="display: none;">
+                                <h5>Your Profile:</h5>
+                                <p id="outputName"></p>
+                                <p id="outputCourseId"></p>
+                                <p id="outputEnrolledClasses"></p>
+                                <p id="outputPersonalMobile"></p>
+                                <p id="outputParentsMobile"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center py-3">
+        <p>&copy; 2024 Virtual Classroom | Designed with <span style="color: #e25555;">♥</span> by Shivam Kumar</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
